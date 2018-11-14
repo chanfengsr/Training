@@ -19,13 +19,13 @@ def main():
         # 输入手机号
         driver.find_element_by_class_name("nw-input").send_keys("18576614172")
         # 输入密码
-        driver.find_element_by_class_name("input").send_keys("your password")
+        driver.find_element_by_class_name("input").send_keys("KevinWong#Libra@1995")
         # 点击登录按钮
         driver.find_element_by_class_name("mybtn").click()
         # 为了使ajax加载完成 此处使用隐式等待让程序等待5秒钟
         driver.implicitly_wait(5)
         # 找到左侧栏的“我的订阅”链接并点击
-        driver.find_element_by_class_name("left-nav").find_elements_by_tag_name("a")[4].cli
+        driver.find_element_by_class_name("left-nav").find_elements_by_tag_name("a")[4].click()
         # 找到页面中部的“开始学习”按钮并点击
         """
         由于我只订阅了一门付费专栏 
@@ -76,6 +76,6 @@ def main():
         end = time.time()
         print("所有文章爬取完毕！共耗时" + str(int(end - start)) + "秒")
         break
-        
+
 if __name__ == '__main__':
     main()
