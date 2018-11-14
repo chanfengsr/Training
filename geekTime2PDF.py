@@ -2,6 +2,7 @@
 Function：利用Python的Selenium库爬取极客时间付费课程并保存为PDF文件
 Author：KevinWong
 Time： 2018年9月30日20:48:38
+https://mp.weixin.qq.com/s/RxBagi0HB01NbUrZDQ4ViQ
 """
 from selenium import webdriver
 import pdfkit,time,re
