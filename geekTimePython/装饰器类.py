@@ -39,8 +39,10 @@ class email_logit(logit):
         # super()
         print('notify_email')
 
+
 @email_logit()
 def myfunc1():
     print('myfunc1')
+
 
 myfunc1()
